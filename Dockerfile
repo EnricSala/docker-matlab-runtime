@@ -5,7 +5,7 @@ ENV JAVA_HOME 		/usr/bin/java
 ENV PATH 		${PATH}:${JAVA_HOME}/bin
 
 # Set MCR environment variables
-ENS MATLAB_JAVA		${JAVA_HOME}
+ENV MATLAB_JAVA		${JAVA_HOME}
 ENV MCR_VERSION         R2014a
 ENV MCR_NUM             v83
 
