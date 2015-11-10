@@ -1,0 +1,17 @@
+
+## Configure the MCR installation process
+## Pass this file to the installer like so:
+##   ./install -inputFile={thisfile.txt}
+
+## Set the desired value for destinationFolder
+destinationFolder=/opt/mcr
+
+## Set agreeToLicense value to yes or no
+agreeToLicense=yes
+
+## Set the desired value for outputFile
+outputFile=/log/mcr-install.log
+
+## Set mode to silent to skip prompts
+mode=silent
+
