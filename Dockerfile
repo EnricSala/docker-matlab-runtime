@@ -30,9 +30,12 @@ RUN cd /mcr-install \
 	&& rm -rf /mcr-install
 
 # Set MCR environment variables
-ENV LD_LIBRARY_PATH 	/opt/mcr/${MCR_NUM}/runtime/glnxa64:/opt/mcr/${MCR_NUM}/bin/glnxa64:/opt/mcr/${MCR_NUM}/sys/os/glnxa64:
+ENV LD_LIBRARY_PATH 	${LD_LIBRARY_PATH}:\
+/opt/mcr/${MCR_NUM}/runtime/glnxa64:\
+/opt/mcr/${MCR_NUM}/bin/glnxa64:\
+/opt/mcr/${MCR_NUM}/sys/os/glnxa64
+
 ENV XAPPLRESDIR 	/opt/mcr/${MCR_NUM}/X11/app-defaults
 
 # Define default command
 CMD ["bash"]
-
