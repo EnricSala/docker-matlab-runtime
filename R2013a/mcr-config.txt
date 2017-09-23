@@ -1,4 +1,3 @@
-
 ## Configure the MCR installation process
 ## Pass this file to the installer like so:
 ##   ./install -inputFile={thisfile.txt}
@@ -14,4 +13,3 @@ outputFile=/log/mcr-install.log
 
 ## Set mode to silent to skip prompts
 mode=silent
-
